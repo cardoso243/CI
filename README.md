@@ -96,3 +96,25 @@ Arquivo: [Modal.php](https://github.com/cardoso243/CI/blob/master/libraries/Moda
 ```
 <p>Resultado</p>
 ![modal](https://cloud.githubusercontent.com/assets/9054137/19333126/5181d420-90c9-11e6-9c2c-0552c6c46e3d.jpg)
+
+```php
+//config/autoload.php
+//$autoload['libraries'] = array('modal')
+   $attrBtn = array(
+            'class' => 'btn btn-primary',
+            'data-toggle' => 'modal',
+            'data-target' => '#myModal'
+        );
+        echo form_button($attrBtn, 'info');
+        $attrMdl = array(
+            'title' => 'Modal 02',
+            'data_target' => 'myModal',
+            'sizes' => 'sm',
+            'content_body' => 'Bootstrap modal-sm',
+              'content_footer' => '<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                 <button type="button" class="btn btn-primary">Save changes</button>'
+        );
+        echo $modal->modal($attrMdl);
+```
+Resultado
+![modal-sm](https://cloud.githubusercontent.com/assets/9054137/19334225/e04e5db6-90d0-11e6-9171-69a5757baff5.jpg)
