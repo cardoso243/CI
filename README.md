@@ -94,3 +94,5 @@ Arquivo: [Modal.php](https://github.com/cardoso243/CI/blob/master/libraries/Moda
         );
         echo $modal->modal($attrMdl);
 ```
+<p>Resultado</p>
+![modal](https://cloud.githubusercontent.com/assets/9054137/19333126/5181d420-90c9-11e6-9c2c-0552c6c46e3d.jpg)
