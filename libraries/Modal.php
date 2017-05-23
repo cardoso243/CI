@@ -94,8 +94,7 @@ class Modal {
 
     private function create_modal()
     {
-        echo $this->options;
-
+       
         return '<div class="modal ' . $this->ternary(!$this->remove_animation, 'fade') . '"  '
                 . $this->ternary($this->data_target, 'id="' . $this->data_target . '" ') .
                 'tabindex="-1" role="dialog" ' . $this->options . '> <!-- div .modal -->
