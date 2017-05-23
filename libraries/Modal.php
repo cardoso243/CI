@@ -121,7 +121,7 @@ class Modal {
     public function modal(array $attr)
     {
         $this->attr($attr);
-        $this->create_modal();
+        return $this->create_modal();
     }
 
     private function ternary($check, $value)
