@@ -1,27 +1,5 @@
 <?php
 
-$ul = '<ul>'
-        . '<li>Menu</li>'
-        . '<li>Cor'
-        .  '<ul>'
-        .       '<li>Vermelho</li>'
-        .   '</ul>'
-        . '</li>'
-        . '<li>Contato</li>'
-        . '<li></li>'
-        . '<li></li>'
-        . '</ul>';
-$cont =0;
-$c = preg_replace('//','#',$ul);
-print_r($c);
-
-//$ul = array(
-//    '<a href="">A</a>',
-//    '<a href="">B</a>',
-//    '<a href="">C</a>',
-//    '<a href="">D</a>'
-//);
-
 function li($ul, $atributs)
 {
 
@@ -46,12 +24,3 @@ function isArrayUl($ul)
     endif;
     return $ul;
 }
-
-$attrLi = array(
-    'class' => 'list-group-item'
-);
-$attrUl = array(
-    'class' => 'list-group'
-);
-//echo isArrayUl($ul);
-//echo li($ul, $attrLi);
